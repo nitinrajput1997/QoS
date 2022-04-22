@@ -1,4 +1,4 @@
-# QoS
+# SDAP-QoS
 
 ![](/photos/QoS.png)
 
@@ -18,4 +18,7 @@ QFI provides different Flow ID to each services so that each services has differ
  
  2. Non-GBR :- This is used for the traffic having bursty in nature.
  
- 3. Delay Critical :- This is used for the mission critical application. 
+ 3. Delay Critical :- This is used for the mission critical application.
+
+
+**Note:** SDAP on gNB is responsible for mapping the QoS Flow to teh desired Radio-Bearer. So that, it provides same radio-bearer for whatsapp video call and zoom video call and different radio-bearer for the youtube as it is related to streaming. If in some case there is calling using 5G then it will creates its own PDU-Session.
